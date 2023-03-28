@@ -1,11 +1,30 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
 }
 
-<div class="jumbotron">
+<div class="HeadSection">
     <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <p style="font-size: 25px;"> Rokto is a real-time free platform to help blood searchers connect voluntary blood donors around Bangladesh.</p>
+    <p><a href="#" class="btn btn-danger btn-lg">Join as a Donor</a> <a style="margin-left:5px;" href="#" class="btn btn-success btn-lg">Search Donors</a></p>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>What is Rokto?</h3>
+            <p style="font-size: 20px;">Rokto is an automated blood service that connects blood searchers with voluntary donors in a moment through SMS. Rokto is always a free service for all.</p>
+        </div>
+        <div class="col-md-6">
+            <h3>Why is Rokto?</h3>
+            <ul style="font-size: 20px;">
+                <li>100% Automated</li>
+                <li>Always free</li>
+                <li>24×7 service</li>
+                <li>All data is secured</li>
+            </ul>         
+        </div>
+    </div>
+    <div class="text-center ButtonCustom">
+        <a href="#" class="btn btn-danger btn-lg">Learn More</a>
+    </div>
 </div>
 
 <div class="row">
