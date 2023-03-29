@@ -101,8 +101,8 @@ H:\GitHub\Project\BloodBank\bin\Microsoft.Owin.Security.Twitter.xml
 H:\GitHub\Project\BloodBank\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 H:\GitHub\Project\BloodBank\bin\Microsoft.Owin.Security.OAuth.xml
 H:\GitHub\Project\BloodBank\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-H:\GitHub\Project\BloodBank\obj\Debug\BloodBank.csproj.AssemblyReference.cache
 H:\GitHub\Project\BloodBank\obj\Debug\BloodBank.csproj.CoreCompileInputs.cache
 H:\GitHub\Project\BloodBank\obj\Debug\BloodBank.csproj.CopyComplete
 H:\GitHub\Project\BloodBank\obj\Debug\BloodBank.dll
 H:\GitHub\Project\BloodBank\obj\Debug\BloodBank.pdb
+H:\GitHub\Project\BloodBank\obj\Debug\BloodBank.csproj.AssemblyReference.cache
