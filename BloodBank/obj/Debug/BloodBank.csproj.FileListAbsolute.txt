@@ -77,6 +77,8 @@ H:\GitHub\Project\BloodBank\bin\System.Web.WebPages.Deployment.dll
 H:\GitHub\Project\BloodBank\bin\System.Web.WebPages.dll
 H:\GitHub\Project\BloodBank\bin\System.Web.WebPages.Razor.dll
 H:\GitHub\Project\BloodBank\bin\WebGrease.dll
+H:\GitHub\Project\BloodBank\bin\EntityFramework.xml
+H:\GitHub\Project\BloodBank\bin\EntityFramework.SqlServer.xml
 H:\GitHub\Project\BloodBank\bin\System.Web.Helpers.xml
 H:\GitHub\Project\BloodBank\bin\System.Web.Mvc.xml
 H:\GitHub\Project\BloodBank\bin\System.Web.Optimization.xml
@@ -86,8 +88,6 @@ H:\GitHub\Project\BloodBank\bin\System.Web.WebPages.Deployment.xml
 H:\GitHub\Project\BloodBank\bin\System.Web.WebPages.Razor.xml
 H:\GitHub\Project\BloodBank\bin\Newtonsoft.Json.xml
 H:\GitHub\Project\BloodBank\bin\Antlr3.Runtime.pdb
-H:\GitHub\Project\BloodBank\bin\EntityFramework.xml
-H:\GitHub\Project\BloodBank\bin\EntityFramework.SqlServer.xml
 H:\GitHub\Project\BloodBank\bin\Microsoft.AspNet.Identity.Core.xml
 H:\GitHub\Project\BloodBank\bin\Microsoft.AspNet.Identity.Owin.xml
 H:\GitHub\Project\BloodBank\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -105,4 +105,3 @@ H:\GitHub\Project\BloodBank\obj\Debug\BloodBank.csproj.CoreCompileInputs.cache
 H:\GitHub\Project\BloodBank\obj\Debug\BloodBank.csproj.CopyComplete
 H:\GitHub\Project\BloodBank\obj\Debug\BloodBank.dll
 H:\GitHub\Project\BloodBank\obj\Debug\BloodBank.pdb
-H:\GitHub\Project\BloodBank\obj\Debug\BloodBank.csproj.AssemblyReference.cache
