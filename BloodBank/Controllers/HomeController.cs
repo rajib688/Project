@@ -15,7 +15,8 @@ namespace BloodBank.Controllers
             var bloodGroup = db.BloodGroups.ToList();
             ViewBag.bldgrup = bloodGroup;
 
-
+            var Dstrct = db.Districts.ToList();
+            ViewBag.District = Dstrct;
 
 
             return View();
@@ -30,7 +31,11 @@ namespace BloodBank.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            var bloodGroup = db.BloodGroups.ToList();
+            ViewBag.bldgrup = bloodGroup;
+
+            var Dstrct = db.Districts.ToList();
+            ViewBag.District = Dstrct;
 
             return View();
         }

@@ -2,17 +2,37 @@
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_CustomLayout.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="DonorSearchhead" style="margin: 100px -15px 50px -5px; background: #808080; padding-top: 50px; padding-bottom: 50px;">
+    @Html.Partial("SearchDonor")
+</div>
+<div class="">
+    <h3 style="background: #ff0000; font-family: 'Poppins', sans-serif; font-weight:bold; margin-bottom:20px;">Total donors found</h3>
+    <div class="row">
+        @*@foreach (var item in ViewBag.Request)
+        {*@
+        <div class="col-md-4">
+            <div class="well" style="min-height:150px">
+                <p>Name: Md Rajib Rari</p>
+                <p>Group: A+</p>
+                <p>District: Patuakhali</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well" style="min-height:150px">
+                <p>Name: Md Rajib Rari</p>
+                <p>Group: A+</p>
+                <p>District: Patuakhali</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well" style="min-height:150px">
+                <p>Name: Md Rajib Rari</p>
+                <p>Group: A+</p>
+                <p>District: Patuakhali</p>
+            </div>
+        </div>
+        @*}*@
+    </div>
+</div>
