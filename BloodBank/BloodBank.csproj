@@ -171,6 +171,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BloodGroupsController.cs" />
+    <Compile Include="Controllers\Blood_RequestController.cs" />
     <Compile Include="Controllers\DistrictsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -294,6 +295,7 @@
     <Content Include="Views\Districts\Details.cshtml" />
     <Content Include="Views\Districts\Edit.cshtml" />
     <Content Include="Views\Districts\Index.cshtml" />
+    <Content Include="Views\Blood_Request\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
