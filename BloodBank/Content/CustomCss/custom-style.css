@@ -100,3 +100,16 @@
 .blood_group {
     height: 402px !important;
 }
+
+/*
+    ViewPost
+*/
+.paralax_area {
+    margin-top: 40px;
+    background-image: url('../img/blood-footer.jpg') !important;
+    background-position: center !important;
+    background-size: cover !important;
+    width: 119%;
+    height: auto;
+    margin-left: -106px;
+}

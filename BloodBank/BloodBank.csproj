@@ -216,6 +216,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CustomCss\custom-style.css" />
     <Content Include="Content\CustomCss\style.css" />
+    <Content Include="Content\img\blood-footer.jpg" />
     <Content Include="Content\img\bloodpicture.jpg" />
     <Content Include="Content\img\user %281%29.jpg" />
     <Content Include="favicon.ico" />
@@ -305,6 +306,7 @@
     <Content Include="Views\Requests\Details.cshtml" />
     <Content Include="Views\Requests\Edit.cshtml" />
     <Content Include="Views\Requests\Index.cshtml" />
+    <Content Include="Views\Shared\ViewPost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

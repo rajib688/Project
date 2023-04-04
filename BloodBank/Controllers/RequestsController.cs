@@ -54,7 +54,7 @@ namespace BloodBank.Controllers
             {
                 db.Requests.Add(request);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Home");
             }
 
             ViewBag.BloodGroup = new SelectList(db.BloodGroups, "GroupId", "GroupName", request.BloodGroup);

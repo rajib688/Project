@@ -18,6 +18,9 @@ namespace BloodBank.Controllers
             var Dstrct = db.Districts.ToList();
             ViewBag.District = Dstrct;
 
+            var Viewpost = db.Requests.ToList().Take(6);
+            ViewBag.pst = Viewpost;
+
 
             return View();
         }
