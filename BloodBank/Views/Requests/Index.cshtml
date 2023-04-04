@@ -1,0 +1,66 @@
+﻿@model IEnumerable<BloodBank.Models.Request>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AminLayout.cshtml";
+}
+
+<h2>Index</h2>
+<div class="blood_group">
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfBag)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodNeededDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WhyBloodNeeded)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BlooddonationAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodGroup1.GroupName)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberOfBag)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BloodNeededDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContactNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WhyBloodNeeded)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BlooddonationAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BloodGroup1.GroupName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

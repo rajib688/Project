@@ -27,5 +27,6 @@ namespace BloodBank.Models
     
         public virtual DbSet<BloodGroup> BloodGroups { get; set; }
         public virtual DbSet<District> Districts { get; set; }
+        public virtual DbSet<Request> Requests { get; set; }
     }
 }

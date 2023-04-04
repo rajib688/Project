@@ -7,7 +7,7 @@ using BloodBank.Models;
 
 namespace BloodBank.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class Blood_RequestController : Controller
     {
         Blood_BankFEntities db = new Blood_BankFEntities();

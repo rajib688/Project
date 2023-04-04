@@ -28,18 +28,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About Us ", "About", "Home")</li>
                     <li>@Html.ActionLink("Search Donors ", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Add Blood Request ", "Index", "Blood_Request")</li>
-                    @if (Request.IsAuthenticated)
-                    {
-                        if (User.IsInRole("admin"))
-                        {
-
-                        }
-                        else
-                        {
-
-                        }
-                    }
+                    <li>@Html.ActionLink("Add Blood Request ", "Create", "Requests")</li>                  
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

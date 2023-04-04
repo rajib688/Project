@@ -1,0 +1,67 @@
+﻿@model BloodBank.Models.Request
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Request</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfBag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfBag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BloodNeededDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BloodNeededDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WhyBloodNeeded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WhyBloodNeeded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlooddonationAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlooddonationAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BloodGroup1.GroupName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BloodGroup1.GroupName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -14,8 +14,17 @@ namespace BloodBank.Models
     
     public partial class BloodGroup
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public BloodGroup()
+        {
+            this.Requests = new HashSet<Request>();
+        }
+    
         public int GroupId { get; set; }
         public string GroupName { get; set; }
         public Nullable<bool> Status { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Request> Requests { get; set; }
     }
 }

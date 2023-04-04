@@ -7,6 +7,8 @@
       <Diagram DiagramId="a6ee9b2b406b4bf0b693979b9431e54d" Name="Diagram1">
         <EntityTypeShape EntityType="Blood_BankFModel.BloodGroup" Width="1.5" PointX="0.625" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="Blood_BankFModel.District" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Blood_BankFModel.Request" Width="1.5" PointX="2.875" PointY="3.875" />
+        <AssociationConnector Association="Blood_BankFModel.FK_BloodRequest_BloodGroup" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

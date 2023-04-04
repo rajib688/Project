@@ -19,5 +19,18 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Requests">
+      <EntityTypeMapping TypeName="Blood_BankFModel.Request">
+        <MappingFragment StoreEntitySet="Request">
+          <ScalarProperty Name="BlooddonationAddress" ColumnName="BlooddonationAddress" />
+          <ScalarProperty Name="WhyBloodNeeded" ColumnName="WhyBloodNeeded" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="BloodNeededDate" ColumnName="BloodNeededDate" />
+          <ScalarProperty Name="NumberOfBag" ColumnName="NumberOfBag" />
+          <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
