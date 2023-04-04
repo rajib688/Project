@@ -1,0 +1,42 @@
+﻿@model IEnumerable<BloodBank.Models.BloodGroup>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AminLayout.cshtml";
+}
+
+<h2>Blood Group</h2>
+<div class="blood_group">
+    <p>
+        @Html.ActionLink("Create New", "Create", new { area = "" }, new { @class = "btn btn-danger" })
+    </p>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.GroupName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GroupName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.GroupId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.GroupId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.GroupId })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

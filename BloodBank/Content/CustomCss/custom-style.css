@@ -1,0 +1,102 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap');
+.navbar-inverse {
+    background-color: #d9534f !important;
+    border-color: #fff !important;
+}
+.HeadSection {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+.banner-card {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.banner-card img {
+    width: 119%;
+    height: auto;
+    margin-left: -106px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 40%;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.banner-text h3{
+    font-size:40px;
+    font-weight: bold;
+    margin-bottom:5px;
+}
+
+.ButtonCustom {
+    margin-top: 10px;
+}
+.ButtonCustom a:hover 
+{
+    background-color: #000000;
+}
+.CustomFooter 
+{
+    background: #000000;
+    color: #fff;
+/*    margin-bottom:0px;*/
+    padding:10px;
+}
+.SearchButtom h2
+{
+    margin: 50px 0px 30px 0px;
+}
+.AboutSection {
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+.AboutSection p {
+    font-size:20px;
+     margin:30px 0px 30px 0px;
+}
+
+/*
+    About Us
+*/
+.container 
+{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+.AboutHead {
+    margin-top: 100px;
+    font-size: 20px;
+    background: #078a2a;
+    padding: 10px;
+    opacity: 0.8;
+}
+    .AboutHead h3 {
+        margin-top: 40px;
+        color: #ff0000;
+    }
+    .AboutHead p {
+        margin-top: 10px;
+        color: #000000;
+    }
+.blooddescription {
+    margin-top: 80px;
+    font-size: 15px;
+}
+.Visionsection 
+{
+     margin-top: -30px; 
+     padding:10px;
+}
+/*
+    DonorSearch
+*/
+
+/*
+		AdminSection
+*/
+.blood_group {
+    height: 402px !important;
+}

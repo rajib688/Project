@@ -1,0 +1,36 @@
+﻿@model BloodBank.Models.BloodGroup
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AminLayout.cshtml";
+}
+
+<h2>Details</h2>
+<div class="blood_group">
+    <div>
+        <h4>BloodGroup</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.GroupName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GroupName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Status)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.GroupId }, new { @class = "btn btn-danger" }) |
+        @Html.ActionLink("Back to List", "Index", new { area = "" }, new { @class = "btn btn-danger" })
+    </p>
+</div>

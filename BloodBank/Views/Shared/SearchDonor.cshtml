@@ -1,0 +1,53 @@
+﻿
+<selection id="Search_blood">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="form-label">Blood Group</label>
+                    <select class="form-control">
+                        <option value="0">Select........</option>
+                        @foreach (var item in ViewBag.bldgrup)
+                        {
+                            <option value="@item.GroupId">@item.GroupName</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="form-label">District</label>
+                    <select class="form-control">
+                        <option value="0">Select........</option>
+                        @foreach (var item in ViewBag.District)
+                        {
+                            <option value="@item.DistrictId">@item.DistrictName</option>
+                        }                       
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label class="form-label">Date of Blood Donation</label>
+                    <input type="date" name="date" value="" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label class="form-label">Donor Type</label>
+                    <select class="form-control">
+                        <option value="0">Select........</option>
+                        <option value="1">All</option>
+                        <option value="2">Eliable</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label class="form-label">&nbsp;</label>
+                    <button class="btn btn-danger form-control" type="submit">SEARCH</button>
+                </div>         
+            </div>
+        </div>
+    </div>
+</selection>

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<BloodBank.Models.District>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AminLayout.cshtml";
+}
+
+<h2>District</h2>
+<div class="blood_group">
+    <p>
+        @Html.ActionLink("Create New", "Create", new { area = "" }, new { @class = "btn btn-danger" })
+    </p>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DistrictName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DistrictName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.DistrictId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.DistrictId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.DistrictId })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
