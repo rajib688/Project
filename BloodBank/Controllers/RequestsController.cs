@@ -17,7 +17,7 @@ namespace BloodBank.Controllers
         // GET: Requests
         public ActionResult Index()
         {
-            var requests = db.Requests.Include(r => r.BloodGroup1);
+            var requests = db.Requests.Include(r => r.BloodGroup);
             return View(requests.ToList());
         }
 
@@ -39,7 +39,7 @@ namespace BloodBank.Controllers
         // GET: Requests/Create
         public ActionResult Create()
         {
-            ViewBag.BloodGroup = new SelectList(db.BloodGroups, "GroupId", "GroupName");
+            ViewBag.BloodGroupId = new SelectList(db.BloodGroups, "GroupId", "GroupName");
             return View();
         }
 
@@ -48,16 +48,17 @@ namespace BloodBank.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,BloodGroup,NumberOfBag,BloodNeededDate,ContactNumber,WhyBloodNeeded,BlooddonationAddress")] Request request)
+        public ActionResult Create([Bind(Include = "Id,BloodGroupId,NumberOfBag,BloodNeededDate,ContactNumber,WhyBloodNeeded,BlooddonationAddress")] Request request)
         {
             if (ModelState.IsValid)
             {
                 db.Requests.Add(request);
                 db.SaveChanges();
+
                 return RedirectToAction("Index", "Home");
             }
 
-            ViewBag.BloodGroup = new SelectList(db.BloodGroups, "GroupId", "GroupName", request.BloodGroup);
+            ViewBag.BloodGroupId = new SelectList(db.BloodGroups, "GroupId", "GroupName", request.BloodGroupId);
             return View(request);
         }
 
@@ -73,7 +74,7 @@ namespace BloodBank.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.BloodGroup = new SelectList(db.BloodGroups, "GroupId", "GroupName", request.BloodGroup);
+            ViewBag.BloodGroupId = new SelectList(db.BloodGroups, "GroupId", "GroupName", request.BloodGroupId);
             return View(request);
         }
 
@@ -82,7 +83,7 @@ namespace BloodBank.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,BloodGroup,NumberOfBag,BloodNeededDate,ContactNumber,WhyBloodNeeded,BlooddonationAddress")] Request request)
+        public ActionResult Edit([Bind(Include = "Id,BloodGroupId,NumberOfBag,BloodNeededDate,ContactNumber,WhyBloodNeeded,BlooddonationAddress")] Request request)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +91,7 @@ namespace BloodBank.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.BloodGroup = new SelectList(db.BloodGroups, "GroupId", "GroupName", request.BloodGroup);
+            ViewBag.BloodGroupId = new SelectList(db.BloodGroups, "GroupId", "GroupName", request.BloodGroupId);
             return View(request);
         }
 

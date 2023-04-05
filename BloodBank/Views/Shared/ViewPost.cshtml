@@ -8,11 +8,12 @@
             @foreach (var item in ViewBag.pst)
             {
                 <div class="col-md-4">
-                    <div class="well" style="min-height:400px">
-                        @*<h2>Blood Group: @item.BloodGroup.BloodGroup</h2>*@
+                    <div class="well" style="min-height:350px; font-size:16px;">
+                        <p>Blood Group: @item.BloodGroup.GroupName</p>
                         <p>Number Of Bag: @item.NumberOfBag</p>
                         <p>Contact Number: @item.ContactNumber</p>
-                        <p>donationAddress: @item.BlooddonationAddress</p>                      
+                        <p>Donation Address: @item.BlooddonationAddress</p>                      
+                        <p>Why Blood Needed: @item.WhyBloodNeeded</p>                      
                         @*<p><a class="btn btn-default" href="#">View Details &raquo;</a></p>*@
                     </div>
                 </div>

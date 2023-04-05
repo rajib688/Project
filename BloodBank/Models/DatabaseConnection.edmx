@@ -26,14 +26,14 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="BloodGroup" Type="int" />
+          <Property Name="BloodGroupId" Type="int" />
           <Property Name="NumberOfBag" Type="int" />
           <Property Name="BloodNeededDate" Type="date" />
           <Property Name="ContactNumber" Type="varchar" MaxLength="50" />
           <Property Name="WhyBloodNeeded" Type="nvarchar(max)" />
           <Property Name="BlooddonationAddress" Type="nvarchar" MaxLength="500" />
         </EntityType>
-        <Association Name="FK_BloodRequest_BloodGroup">
+        <Association Name="FK_Request_BloodGroup">
           <End Role="BloodGroup" Type="Self.BloodGroup" Multiplicity="0..1" />
           <End Role="Request" Type="Self.Request" Multiplicity="*" />
           <ReferentialConstraint>
@@ -41,7 +41,7 @@
               <PropertyRef Name="GroupId" />
             </Principal>
             <Dependent Role="Request">
-              <PropertyRef Name="BloodGroup" />
+              <PropertyRef Name="BloodGroupId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -49,7 +49,7 @@
           <EntitySet Name="BloodGroup" EntityType="Self.BloodGroup" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="District" EntityType="Self.District" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Request" EntityType="Self.Request" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_BloodRequest_BloodGroup" Association="Self.FK_BloodRequest_BloodGroup">
+          <AssociationSet Name="FK_Request_BloodGroup" Association="Self.FK_Request_BloodGroup">
             <End Role="BloodGroup" EntitySet="BloodGroup" />
             <End Role="Request" EntitySet="Request" />
           </AssociationSet>
@@ -65,17 +65,17 @@
           <Property Name="GroupId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="GroupName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Status" Type="Boolean" />
-          <NavigationProperty Name="Requests" Relationship="Blood_BankFModel.FK_BloodRequest_BloodGroup" FromRole="BloodGroup" ToRole="Request" />
-        </EntityType>
+          <NavigationProperty Name="Requests" Relationship="Blood_BankFModel.FK_Request_BloodGroup" FromRole="BloodGroup" ToRole="Request" />
+          </EntityType>
         <EntityContainer Name="Blood_BankFEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="BloodGroups" EntityType="Self.BloodGroup" />
           <EntitySet Name="Districts" EntityType="Blood_BankFModel.District" />
           <EntitySet Name="Requests" EntityType="Blood_BankFModel.Request" />
-          <AssociationSet Name="FK_BloodRequest_BloodGroup" Association="Blood_BankFModel.FK_BloodRequest_BloodGroup">
+          <AssociationSet Name="FK_Request_BloodGroup" Association="Blood_BankFModel.FK_Request_BloodGroup">
             <End Role="BloodGroup" EntitySet="BloodGroups" />
             <End Role="Request" EntitySet="Requests" />
           </AssociationSet>
-        </EntityContainer>
+          </EntityContainer>
         <EntityType Name="District">
           <Key>
             <PropertyRef Name="DistrictId" />
@@ -89,15 +89,15 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="BloodGroup" Type="Int32" />
+          <Property Name="BloodGroupId" Type="Int32" />
           <Property Name="NumberOfBag" Type="Int32" />
           <Property Name="BloodNeededDate" Type="DateTime" Precision="0" />
           <Property Name="ContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="WhyBloodNeeded" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="BlooddonationAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="BloodGroup1" Relationship="Blood_BankFModel.FK_BloodRequest_BloodGroup" FromRole="Request" ToRole="BloodGroup" />
+          <NavigationProperty Name="BloodGroup" Relationship="Blood_BankFModel.FK_Request_BloodGroup" FromRole="Request" ToRole="BloodGroup" />
         </EntityType>
-        <Association Name="FK_BloodRequest_BloodGroup">
+        <Association Name="FK_Request_BloodGroup">
           <End Type="Blood_BankFModel.BloodGroup" Role="BloodGroup" Multiplicity="0..1" />
           <End Type="Blood_BankFModel.Request" Role="Request" Multiplicity="*" />
           <ReferentialConstraint>
@@ -105,11 +105,11 @@
               <PropertyRef Name="GroupId" />
             </Principal>
             <Dependent Role="Request">
-              <PropertyRef Name="BloodGroup" />
+              <PropertyRef Name="BloodGroupId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -141,7 +141,7 @@
                 <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
                 <ScalarProperty Name="BloodNeededDate" ColumnName="BloodNeededDate" />
                 <ScalarProperty Name="NumberOfBag" ColumnName="NumberOfBag" />
-                <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+                <ScalarProperty Name="BloodGroupId" ColumnName="BloodGroupId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

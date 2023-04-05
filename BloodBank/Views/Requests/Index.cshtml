@@ -6,10 +6,8 @@
 }
 
 <h2>Index</h2>
+
 <div class="blood_group">
-    @*<p>
-        @Html.ActionLink("Create New", "Create")
-    </p>*@
     <table class="table table-bordered table-striped">
         <tr>
             <th>
@@ -28,7 +26,7 @@
                 @Html.DisplayNameFor(model => model.BlooddonationAddress)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.BloodGroup1.GroupName)
+                @Html.DisplayNameFor(model => model.BloodGroup.GroupName)
             </th>
             <th></th>
         </tr>
@@ -52,7 +50,7 @@
                     @Html.DisplayFor(modelItem => item.BlooddonationAddress)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.BloodGroup1.GroupName)
+                    @Html.DisplayFor(modelItem => item.BloodGroup.GroupName)
                 </td>
                 <td>
                     @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |

@@ -8,66 +8,69 @@
 <h2>Delete</h2>
 
 <h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Request</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.NumberOfBag)
-        </dt>
+<div class="blood_group">
+    <div>
+        <h4>Request</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.NumberOfBag)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.NumberOfBag)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.NumberOfBag)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BloodNeededDate)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.BloodNeededDate)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.BloodNeededDate)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.BloodNeededDate)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ContactNumber)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.ContactNumber)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ContactNumber)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.ContactNumber)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.WhyBloodNeeded)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.WhyBloodNeeded)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.WhyBloodNeeded)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.WhyBloodNeeded)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BlooddonationAddress)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.BlooddonationAddress)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.BlooddonationAddress)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.BlooddonationAddress)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BloodGroup1.GroupName)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.BloodGroup.GroupName)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.BloodGroup1.GroupName)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.BloodGroup.GroupName)
+            </dd>
 
-    </dl>
+        </dl>
 
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-danger" /> |
-            @Html.ActionLink("Back to List", "Index", new { area = "" }, new { @class = "btn btn-danger" })
-        </div>
-    }
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                @Html.ActionLink("Back to List", "Index", new { area = "" }, new { @class = "btn btn-danger" })
+            </div>
+        }
+    </div>
 </div>

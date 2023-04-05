@@ -301,12 +301,12 @@
     <Content Include="Views\Districts\Edit.cshtml" />
     <Content Include="Views\Districts\Index.cshtml" />
     <Content Include="Views\Blood_Request\Index.cshtml" />
+    <Content Include="Views\Shared\ViewPost.cshtml" />
     <Content Include="Views\Requests\Create.cshtml" />
     <Content Include="Views\Requests\Delete.cshtml" />
     <Content Include="Views\Requests\Details.cshtml" />
     <Content Include="Views\Requests\Edit.cshtml" />
     <Content Include="Views\Requests\Index.cshtml" />
-    <Content Include="Views\Shared\ViewPost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

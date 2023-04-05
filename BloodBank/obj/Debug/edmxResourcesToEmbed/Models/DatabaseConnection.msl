@@ -27,7 +27,7 @@
           <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
           <ScalarProperty Name="BloodNeededDate" ColumnName="BloodNeededDate" />
           <ScalarProperty Name="NumberOfBag" ColumnName="NumberOfBag" />
-          <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+          <ScalarProperty Name="BloodGroupId" ColumnName="BloodGroupId" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>

@@ -15,13 +15,13 @@ namespace BloodBank.Models
     public partial class Request
     {
         public int Id { get; set; }
-        public Nullable<int> BloodGroup { get; set; }
+        public Nullable<int> BloodGroupId { get; set; }
         public Nullable<int> NumberOfBag { get; set; }
         public Nullable<System.DateTime> BloodNeededDate { get; set; }
         public string ContactNumber { get; set; }
         public string WhyBloodNeeded { get; set; }
         public string BlooddonationAddress { get; set; }
     
-        public virtual BloodGroup BloodGroup1 { get; set; }
+        public virtual BloodGroup BloodGroup { get; set; }
     }
 }
