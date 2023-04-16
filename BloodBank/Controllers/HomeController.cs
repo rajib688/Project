@@ -31,15 +31,17 @@ namespace BloodBank.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Contact(string bloodGroup, string bloodGroup1)
         {
-            var bloodGroup = db.BloodGroups.ToList();
-            ViewBag.bldgrup = bloodGroup;
+            //var bloodGroup = db.BloodGroups.ToList();
+            //ViewBag.bldgrup = bloodGroup;
 
-            var Dstrct = db.Districts.ToList();
-            ViewBag.District = Dstrct;
+            //var Dstrct = db.Districts.ToList();
+            //ViewBag.District = Dstrct;
 
-            return View();
+            var search = db.Districts.Where(m => m.DistrictName.Contains(bloodGroup) || bloodGroup == null).ToList();
+
+            return View(search);
         }
     }
 }
