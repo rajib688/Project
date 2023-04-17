@@ -14,8 +14,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="../Assets/img/favicon.png" rel="icon">
-    <link href="../Assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <%--<link href="../Assets/img/favicon.png" rel="icon">
+    <link href="../Assets/img/apple-touch-icon.png" rel="apple-touch-icon">--%>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -32,6 +32,9 @@
 
     <!-- Template Main CSS File -->
     <link href="../Assets/css/style.css" rel="stylesheet">
+    <link href="../Assets/css/Custom-style.css" rel="stylesheet" />
+
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -45,8 +48,8 @@
 
                 <nav id="navbar" class="navbar order-last order-lg-0">
                     <ul>
-                        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                        <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+                        <li><a class="nav-link scrollto active" href="../Home.aspx">Home</a></li>
+                        <li><a class="nav-link scrollto" href="../Navbody/About.aspx">About Us</a></li>
                         <li><a class="nav-link scrollto" href="#departments">Search Donors</a></li>
                         <li><a class="nav-link scrollto" href="#doctors">Add Blood Request</a></li>
                         <%--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>

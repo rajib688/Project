@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\Custom-style.css" />
     <Content Include="Assets\css\style.css" />
     <Content Include="Assets\img\about.jpg" />
     <Content Include="Assets\img\apple-touch-icon.png" />
@@ -94,6 +95,9 @@
     <Content Include="Assets\img\testimonials\testimonials-3.jpg" />
     <Content Include="Assets\img\testimonials\testimonials-4.jpg" />
     <Content Include="Assets\img\testimonials\testimonials-5.jpg" />
+    <Content Include="Assets\img\User\blood-footer.jpg" />
+    <Content Include="Assets\img\User\bloodbank.png" />
+    <Content Include="Assets\img\User\images.png" />
     <Content Include="Assets\js\main.js" />
     <Content Include="Assets\scss\Readme.txt" />
     <Content Include="Assets\vendor\animate.css\animate.compat.css" />
@@ -160,6 +164,7 @@
     <Content Include="Assets\vendor\swiper\swiper-bundle.min.css" />
     <Content Include="Assets\vendor\swiper\swiper-bundle.min.js" />
     <Content Include="Home.aspx" />
+    <Content Include="Navbody\About.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +181,13 @@
     </Compile>
     <Compile Include="MasterPage\SiteMaster.Master.designer.cs">
       <DependentUpon>SiteMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Navbody\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navbody\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
