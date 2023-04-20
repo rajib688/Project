@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div style="text-align: center!important">
-                <a href="Navbody/About.aspx" class="btn-get-more" style="text-align: center!important">Learn More</a>
+                <a href="Navbody/About.aspx" class="btn-get-more">Learn More</a>
             </div>
         </div>
     </section>
@@ -52,6 +52,21 @@
                     <p>8 Blood Groups</p>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Rokto is an automated blood service that connects blood searchers with
+                <br>
+                voluntary blood donors in a moment through SMS. Rokto is a not-for-profit
+                <br />
+                initiative to aware people of voluntary blood donation in Bangladesh.
+            </p>
+        </div>
+        <div style="text-align: center!important">
+            <a href="Navbody/About.aspx" class="btn-about-more">Learn More</a>
         </div>
     </section>
 </asp:Content>

@@ -32,8 +32,9 @@
 
     <!-- Template Main CSS File -->
     <link href="../Assets/css/style.css" rel="stylesheet">
+ 
+   <%-- Custom css--%>
     <link href="../Assets/css/Custom-style.css" rel="stylesheet" />
-
 
 </head>
 <body>
