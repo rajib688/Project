@@ -79,3 +79,37 @@
 #about .aboutbottum:hover {
     background: #ff0000;
 }
+/*
+    About section
+*/
+#Aboutpart
+{
+    margin-top:100px;
+}
+#Aboutpart .container
+{
+    position: relative;
+}
+#Aboutpart .About_head
+{
+    background:#808080;
+    padding:15px;
+}
+    #Aboutpart .About_head h2 {
+        color: #ff0000;
+        font-weight: 650;
+    }
+    #Aboutpart .About_head p {
+        color: #ffffff;
+       margin-top:15px;
+    }
+    #Aboutpart .About_colbody {
+        padding:15px;
+        margin-top:30px;
+    }
+        #Aboutpart .About_colbody h2 {
+            margin: 40px 0px 20px 0px;
+        }
+        #Aboutpart .About_colbody p {
+           font-size:18px;
+        }
