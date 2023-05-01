@@ -164,6 +164,7 @@
     <Content Include="Assets\vendor\swiper\swiper-bundle.min.css" />
     <Content Include="Assets\vendor\swiper\swiper-bundle.min.js" />
     <Content Include="Home.aspx" />
+    <Content Include="LoginReg\Login.aspx" />
     <Content Include="Navbody\About.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -174,6 +175,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginReg\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginReg\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage\SiteMaster.Master.cs">
       <DependentUpon>SiteMaster.Master</DependentUpon>

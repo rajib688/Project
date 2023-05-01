@@ -56,4 +56,3 @@ H:\GitHub\Project\Rokto\Rokto\bin\roslyn\vbc.exe.config
 H:\GitHub\Project\Rokto\Rokto\bin\roslyn\vbc.rsp
 H:\GitHub\Project\Rokto\Rokto\bin\roslyn\VBCSCompiler.exe
 H:\GitHub\Project\Rokto\Rokto\bin\roslyn\VBCSCompiler.exe.config
-H:\GitHub\Project\Rokto\Rokto\obj\Debug\Rokto.csproj.AssemblyReference.cache

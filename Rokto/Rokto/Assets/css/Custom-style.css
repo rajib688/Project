@@ -12,55 +12,61 @@
     transition: 0.5s;
     color: #fff;
     background: #1977cc;
-    text-align:center!important;
+    text-align: center !important;
 }
 
-#rokto .btn-get-more:hover {
-    background: #ff0000;
-}
+    #rokto .btn-get-more:hover {
+        background: #ff0000;
+    }
+
 #Area {
-   
-}
-#Area .container {
-    position: relative;
-}
-#Area h2 {
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 40px;
-    color: #ff0000;
-    text-align:center;
 }
 
-#Area .box-icon span {
-    padding: 20px;
-    font-size:40px;
-    color:#ff0000;
-    margin-left:136px;
-}
-#Area .box-icon p {
-    font-size: 30px;
-    color: #ff0000;
-    text-align:center!important;
-}
+    #Area .container {
+        position: relative;
+    }
+
+    #Area h2 {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 40px;
+        color: #ff0000;
+        text-align: center;
+    }
+
+    #Area .box-icon span {
+        padding: 20px;
+        font-size: 40px;
+        color: #ff0000;
+        margin-left: 136px;
+    }
+
+    #Area .box-icon p {
+        font-size: 30px;
+        color: #ff0000;
+        text-align: center !important;
+    }
 
 #about {
-    
 }
-#about .container {
-    position: relative;
-}
-#about h2 {
-    text-align: center !important;
-    color: #ff0000 !important;
-    font-weight: 600 !important;
-    margin:36px;
-}
-#about p {
-    text-align: center !important;
-    color: #ff0000 !important;
-    /*font-weight: 600 !important;*/
-}
+
+    #about .container {
+        position: relative;
+    }
+
+    #about h2 {
+        text-align: center !important;
+        color: #ff0000 !important;
+        font-weight: 600 !important;
+        margin: 36px;
+    }
+
+    #about p {
+        text-align: center !important;
+        color: #ff0000 !important;
+        /*font-weight: 600 !important;*/
+    }
+
 *#about .btn-about-more {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
@@ -76,40 +82,75 @@
     background: #1977cc;
     text-align: center !important;
 }
+
 #about .aboutbottum:hover {
     background: #ff0000;
 }
 /*
     About section
 */
-#Aboutpart
-{
-    margin-top:100px;
+#Aboutpart {
+    margin-top: 100px;
 }
-#Aboutpart .container
-{
+
+#Aboutpart .container {
+position: relative;
+}
+
+#Aboutpart .About_head {
+background: #808080;
+padding: 15px;
+}
+
+#Aboutpart .About_head h2 {
+    color: #ff0000;
+    font-weight: 650;
+}
+
+#Aboutpart .About_head p {
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+#Aboutpart .About_colbody {
+padding: 15px;
+margin-top: 30px;
+}
+
+#Aboutpart .About_colbody h2 {
+    margin: 40px 0px 20px 0px;
+}
+
+#Aboutpart .About_colbody p {
+    font-size: 18px;
+}
+
+/*
+    login section
+*/
+#loginpart {
+    margin-top: 100px!important;
+}
+
+#loginpart .container {
     position: relative;
 }
-#Aboutpart .About_head
-{
-    background:#808080;
-    padding:15px;
+
+#loginpart .login_head {
+    background: #808080;
+    padding: 15px;
 }
-    #Aboutpart .About_head h2 {
-        color: #ff0000;
-        font-weight: 650;
-    }
-    #Aboutpart .About_head p {
-        color: #ffffff;
-       margin-top:15px;
-    }
-    #Aboutpart .About_colbody {
-        padding:15px;
-        margin-top:30px;
-    }
-        #Aboutpart .About_colbody h2 {
-            margin: 40px 0px 20px 0px;
-        }
-        #Aboutpart .About_colbody p {
-           font-size:18px;
-        }
+
+#loginpart .login_head h2 {
+    color: #ff0000;
+    font-weight: 650;
+}
+
+#loginpart .login_head p {
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.input-group {
+    margin-left: 30%;
+}

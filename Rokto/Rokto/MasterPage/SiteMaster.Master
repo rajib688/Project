@@ -71,7 +71,7 @@
                             </ul>
                         </li>--%>
                         <li><a class="nav-link scrollto" href="#contact">Register</a></li>
-                        <li><a class="nav-link scrollto" href="#contact">Login</a></li>
+                        <li><a class="nav-link scrollto" href="../LoginReg/Login.aspx">Login</a></li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav>
