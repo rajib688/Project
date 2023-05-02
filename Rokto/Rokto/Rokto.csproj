@@ -165,7 +165,9 @@
     <Content Include="Assets\vendor\swiper\swiper-bundle.min.js" />
     <Content Include="Home.aspx" />
     <Content Include="LoginReg\Login.aspx" />
+    <Content Include="LoginReg\Registration.aspx" />
     <Content Include="Navbody\About.aspx" />
+    <Content Include="Profile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +185,20 @@
     <Compile Include="LoginReg\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LoginReg\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginReg\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage\SiteMaster.Master.cs">
       <DependentUpon>SiteMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -196,6 +212,13 @@
     </Compile>
     <Compile Include="Navbody\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -243,6 +266,7 @@
     <Content Include="Assets\vendor\remixicon\remixicon.woff" />
     <Content Include="Assets\vendor\remixicon\remixicon.woff2" />
     <Content Include="MasterPage\SiteMaster.Master" />
+    <Content Include="MasterPage\admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

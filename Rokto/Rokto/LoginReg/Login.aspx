@@ -14,18 +14,18 @@
                     <h4 class="text-center mt-5">Welcome Please  Login</h4>
                     <div class="input-group">
                         <div class="card-body">
-                            <div class="col-md-5">
+                            <div class="col-md-6">
                                 <label class="form-label">Email</label>
                                 <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Enter your email"></asp:TextBox>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-label">Password</label>
                                     <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" placeholder="Enter your password"></asp:TextBox>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <asp:Button ID="btnSave" runat="server" Text="Login" CssClass="btn btn-primary btn-lg" />
+                            <div class="form-group mt-1">
+                                <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn btn-danger btn-lg " OnClick="btnLogin_Click" />
                             </div>
                         </div>
                     </div>

@@ -13,5 +13,22 @@ namespace Rokto.LoginReg
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtEmail.Text!="" && txtPassword.Text!="")
+            {
+                string username = txtEmail.Text;
+                string password = txtPassword.Text;
+                if (username=="admin" && password == "123")
+                {
+                    Response.Redirect("~/Profile.aspx");
+                }
+                else
+                {
+
+                }
+            }
+        }
     }
 }

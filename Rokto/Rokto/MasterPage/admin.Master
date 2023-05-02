@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="Rokto.MasterPage.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="Rokto.MasterPage.admin" %>
 
 <!DOCTYPE html>
 
@@ -12,12 +12,6 @@
     </asp:ContentPlaceHolder>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <%--<link href="../Assets/img/favicon.png" rel="icon">
-    <link href="../Assets/img/apple-touch-icon.png" rel="apple-touch-icon">--%>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -35,7 +29,6 @@
  
    <%-- Custom css--%>
     <link href="../Assets/css/Custom-style.css" rel="stylesheet" />
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -70,8 +63,8 @@
                                 <li><a href="#">Drop Down 4</a></li>
                             </ul>
                         </li>--%>
-                        <li><a class="nav-link scrollto" href="../LoginReg/Registration.aspx">Register</a></li>
-                        <li><a class="nav-link scrollto" href="../LoginReg/Login.aspx">Login</a></li>
+                        <li><a class="nav-link scrollto" href="../Profile.aspx">Profile</a></li>
+                        <li><a class="nav-link scrollto" href="#">Log Out</a></li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav>
@@ -83,8 +76,7 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-
-        <!-- ======= Footer ======= -->
+           <!-- ======= Footer ======= -->
         <footer id="footer">
 
             <div class="footer-top">
@@ -138,9 +130,8 @@
             </div>
         </footer>
         <!-- End Footer -->
-
     </form>
-    <div id="preloader"></div>
+     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
@@ -152,6 +143,5 @@
 
     <!-- Template Main JS File -->
     <script src="../Assets/js/main.js"></script>
-
 </body>
 </html>
