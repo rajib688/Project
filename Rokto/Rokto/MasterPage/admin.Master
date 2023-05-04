@@ -64,7 +64,9 @@
                             </ul>
                         </li>--%>
                         <li><a class="nav-link scrollto" href="../Profile.aspx">Profile</a></li>
-                        <li><a class="nav-link scrollto" href="#">Log Out</a></li>
+                        <li>
+                            <asp:Button ID="btnLogOut" runat="server" CssClass="nav-link scrollto" Text="Log Out" OnClick="btnLogOut_Click" /> 
+                        </li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav>

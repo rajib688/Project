@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,8 @@ namespace Rokto.LoginReg
 {
     public partial class Registration : System.Web.UI.Page
     {
-        string _connectionString = @"Data Source = DESKTOP-K32T5PF; Initial Catalog = Rokto; Integrated Security = true;";
+        //string _connectionString = @"Data Source = DESKTOP-K32T5PF; Initial Catalog = Rokto; Integrated Security = true;";
+        string strcon = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -77,18 +79,18 @@ namespace Rokto.LoginReg
         private int SaveReg()
         {
             int Save = 0;
-            SqlConnection cnn;
-            cnn = new SqlConnection(_connectionString);
+            SqlConnection ccnnt;
+            ccnnt = new SqlConnection(strcon);
             string QueryStr = @"insert into Register (MobileNumber, Email, Password) values (@MobileNumber, @Email, @Password)";
-            using (SqlCommand cmd = new SqlCommand(QueryStr, cnn))
+            using (SqlCommand cmd = new SqlCommand(QueryStr, ccnnt))
             {
                 cmd.Parameters.AddWithValue("MobileNumber", txtMobile.Text.Trim());
                 cmd.Parameters.AddWithValue("Email", txtEmail.Text.Trim());
                 cmd.Parameters.AddWithValue("Password", txtPassword.Text.Trim());
 
-                cnn.Open();
+                ccnnt.Open();
                 Save = cmd.ExecuteNonQuery();
-                cnn.Close();
+                ccnnt.Close();
             }
             return Save;
         }
